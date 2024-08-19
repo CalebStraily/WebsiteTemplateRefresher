@@ -6,7 +6,8 @@
 .nav-bar
 {
     padding-top: 10px;
-    background-image:url(./media/noise.avif);
+    background-image:url(./media/index/noise.avif);
+    text-align: center;
 }
 
 .companyTitle
@@ -32,12 +33,18 @@
     display: flex;
     margin-left: -15px;
     padding-top: 20px;
+    justify-content: center;
 }
 
 .nav-bar li
 {
     margin-right: 10px;
     font-weight: 500;
+}
+
+.nav-bar a
+{
+    all: unset;
 }
 
 .hero-img
@@ -57,7 +64,7 @@
 
 .services
 {
-    background-image:url(./media/noise.avif);
+    background-image:url(./media/index/noise.avif);
 }
 
 .services img
@@ -85,6 +92,9 @@
 .portfolio-col
 {
     background-color: white;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
 }
 
 .portfolio p
@@ -213,4 +223,116 @@
 {
     margin-right: 10px;
     font-weight: 500;
+}
+
+@media (min-width: 1200px)
+{
+    .nav-bar
+    {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .nav-logo
+    {
+        text-align: right;
+    }
+
+    .nav-bar ul
+    {
+        margin-left: -15px;
+        padding-top: 20px;
+    }
+
+    .nav-bar li
+    {
+        margin-right: 50px;
+        font-weight: 400;
+    }
+
+    .hero-img p
+    {
+        font-size: 40px;
+        font-weight: 300;
+        padding-top: 20px;
+        margin-left: -20%;
+    }
+
+    .services img
+    {
+        height: auto;
+        width: 100px;
+    }
+
+    .portfolio-title
+    {
+        font-size: 30px;
+        text-align: left;
+    }
+    
+    .portfolio-col
+    {
+        text-align: left;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .portfolio p
+    {
+        font-size: 25px;
+        line-height: 20px;
+        text-align: left;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    .portfolio a
+    {
+        margin-top: 40px;
+    }
+    
+    .portfolio-description
+    {
+        font-size: 11px;
+        line-height: 10px;
+    }
+
+    .portfolio img
+    {
+        width: auto;
+    }
+
+    .watermarks-header
+    {
+        text-align: left;
+    }
+
+    .watermarks img
+    {
+        height: auto;
+        width: 600px;
+    }
+
+    .watermarks-left-row
+    {
+        text-align: right;
+    }
+
+    .footer img
+    {
+        height: auto;
+        width: 39px;
+    }
+
+    .footer-copyright
+    {
+        text-align: right;
+        padding-top: 20px;
+    }
+
+    .footer p
+    {
+        text-align: left;
+        padding-top: 0px;
+    }
 }
