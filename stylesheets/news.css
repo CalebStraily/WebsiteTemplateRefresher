@@ -47,82 +47,75 @@
     all: unset;
 }
 
-.hero-img
+.green-border
 {
-    background-color: #9bc945;
+    background-color: #a0c63f;
+    color: #a0c63f;
+}
+
+.green-top-half
+{
+    border-bottom: solid #bfeb50a6;
+}
+
+.white-bottom-half
+{
+    background-color: white;
+    color: white;
+}
+
+.about-us-description
+{
     padding-top: 20px;
 }
 
-.hero-img p
+.about-us-description h3, h4
 {
-    font-size: 20px;
-    font-weight: 300;
-    color: white;
     text-align: center;
-    text-shadow: 1px 1px 5px rgb(0, 0, 0);
 }
 
-.services
+.about-us-description ul
+{
+    list-style-type: none;
+    margin-left: -30px;
+}
+
+.about-us-description li
+{
+    border-bottom: dashed rgba(0, 0, 0, 0.308);
+}
+
+.black-border-box
+{
+    color: white;
+    border: solid black;
+    border-width: 2px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+.about-us-description h4
+{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: dashed rgba(0, 0, 0, 0.308);
+}
+
+.has-bullets
+{
+    border-bottom: none !important;
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+.noise-borders
 {
     background-image:url(./media/index/noise.avif);
 }
 
-.services img
-{
-    filter: drop-shadow(0px 0px 4px #000000);
-}
-
-.services p
-{
-    font-size: 30px;
-    padding-top: 20px;
-}
-
-.services-subtext
-{
-    font-size: 26px;
-}
-
-.portfolio-title
-{
-    font-size: 30px;
-    text-align: center;
-}
-
-.portfolio-col
-{
-    background-color: white;
-    text-align: center;
-    padding-top: 20px;
-    font-size: 30px;
-}
-
-.portfolio p
+.horizontal-border
 {
     padding-bottom: 40px;
-}
-
-.portfolio a
-{
-    all: unset;
-    background-color: #82a638;
-    color: white;
-}
-
-.portfolio-description
-{
-    font-size: 25px;
-}
-
-.watermarks
-{
-    font-size: 30px;
-    padding-top: 20px;
-}
-
-.watermarks img
-{
-    padding-top: 20px;
 }
 
 .footer
@@ -204,6 +197,7 @@
     background-color: #82a638;
     color: white;
     font-size: 20px;
+    margin-left: 150px;
 }
 
 .bottom-navbar
@@ -255,72 +249,15 @@
         font-weight: 400;
     }
 
-    .hero-img p
+    .about-us-description
     {
-        font-size: 40px;
-        font-weight: 300;
         padding-top: 20px;
-        margin-left: -20%;
     }
 
-    .services img
-    {
-        height: auto;
-        width: 100px;
-    }
-
-    .portfolio-title
-    {
-        font-size: 30px;
-        text-align: left;
-    }
-    
-    .portfolio-col
+    .about-us-description h3, h4
     {
         text-align: left;
-        font-size: 20px;
-        margin-bottom: 30px;
-    }
-    
-    .portfolio p
-    {
-        font-size: 25px;
-        line-height: 20px;
-        text-align: left;
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
-    
-    .portfolio a
-    {
-        margin-top: 40px;
-    }
-    
-    .portfolio-description
-    {
-        font-size: 11px;
-        line-height: 10px;
-    }
-
-    .portfolio img
-    {
-        width: auto;
-    }
-
-    .watermarks-header
-    {
-        text-align: left;
-    }
-
-    .watermarks img
-    {
-        height: auto;
-        width: 600px;
-    }
-
-    .watermarks-left-row
-    {
-        text-align: right;
+        padding-top: 20px;
     }
 
     .footer img
