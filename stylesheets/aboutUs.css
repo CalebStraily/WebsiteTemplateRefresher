@@ -6,7 +6,7 @@
 .nav-bar
 {
     padding-top: 10px;
-    background-image:url(./media/index/noise.avif);
+    background-image:url(./media/index/pattern.jpg);
     text-align: center;
 }
 
@@ -88,7 +88,7 @@
 
 .noise-borders
 {
-    background-image:url(./media/index/noise.avif);
+    background-image:url(./media/index/pattern.jpg);
 }
 
 .horizontal-border
