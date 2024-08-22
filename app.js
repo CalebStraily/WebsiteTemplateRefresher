@@ -55,3 +55,20 @@ function onImagePress()
 
     console.log(`Service subtext changed to: ${serviceColumns[0].innerHTML}`);
 }
+
+let servicesText = document.querySelectorAll(".services h3");
+
+console.log(servicesText)
+
+function stylingText()
+{
+    for (let i = 0; i < servicesText.length; i++)
+    {
+        const element = servicesText[i];
+
+        element.style.color = "green";
+        element.style.fontSize = "60px";
+    }
+}
+
+serviceImageOne.addEventListener("click", stylingText);
