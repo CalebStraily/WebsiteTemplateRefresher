@@ -97,11 +97,13 @@ smartphoneImage.addEventListener("click", onSmartphoneImagePress)
 //gets the elements that need to change colors, stores them in a local variable, and changes their font color to blue
 function onSmartphoneImagePress()
 {
-    let serviceMobile = document.getElementById("serviceMobile");
-    let serviceSubtext = document.getElementById("serviceSubtext");
+    let navText = document.querySelectorAll("nav a");
 
-    serviceMobile.style.color = "blue";
-    serviceSubtext.style.color = "blue";
+    for (let i = 0; i < navText.length; i++)
+    {
+        let element = navText[i];
+        element.style.color = "blue";
+    }
 }
 
 //Ex. 3: Output "Ima Mr. Portfolio to the console when the word 'PORTFOLIO' in 'RECENT FROM PORTFOLIO' is hovered over with the mouse
@@ -148,3 +150,17 @@ function changeSubheaderFont()
 
     element.style.fontSize = "60px";
 }
+
+//Input boxes
+
+let inputName = document.getElementById("name");
+let savedInfo = "";
+
+console.log(inputName);
+
+inputName.addEventListener("input", () => 
+{
+    let currentInput = inputName.value;
+    savedInfo += currentInput;
+    console.log(savedInfo);
+})
