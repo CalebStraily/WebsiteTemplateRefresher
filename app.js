@@ -153,14 +153,73 @@ function changeSubheaderFont()
 
 //Input boxes
 
+/*
+//stores the value at the input tag with id "name"
 let inputName = document.getElementById("name");
+
+//create a variable to store saved input
 let savedInfo = "";
 
 console.log(inputName);
 
+//event listens for input from the user within the input tag with id "name"
 inputName.addEventListener("input", () => 
 {
+    //stores the current value at inputName into a local variable
     let currentInput = inputName.value;
-    savedInfo += currentInput;
+
+    savedInfo = input.value;
+
+    //sets that local variable to savedInfo to persistently keep track of what was entered into the input box
+    savedInfo = currentInput;
+
+    //shows this persistence with a console.log
     console.log(savedInfo);
 })
+
+//2nd Option on asdfsaving information from an input textbox
+
+let inputEmail = document.querySelector("#email");
+console.log(inputEmail);
+let subscribeButton = document.getElementById("subscribeButton");
+console.log(subscribeButton);
+let savedEmailInfo = "";
+
+subscribeButton.addEventListener("click", () => 
+{
+    savedEmailInfo = inputEmail.value;
+
+    console.log(savedEmailInfo);
+})
+*/
+
+console.clear();
+
+//saving a list of personal information
+
+let subscribeList = [];
+
+let subscribeButton = document.querySelector("#subscribeButton");
+
+subscribeButton.addEventListener("click", () =>
+{
+    //grabs the name and email inputted by the user
+    let inputName = document.querySelector("#name").value;
+    let inputEmail = document.querySelector("#email").value;
+
+    //stores the name and email in an object
+    let newObject = 
+    {
+        name: inputName,
+        email: inputEmail
+    };
+
+    //pushes the object to the end of the subscribeList array
+    subscribeList.push(newObject);
+
+    //outputs all the objects in the subscribeList array to the console
+    for (let i = 0; i < subscribeList.length; i++)
+    {
+        console.log(subscribeList[i]);
+    }
+});

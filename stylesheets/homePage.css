@@ -193,7 +193,7 @@
     width: 250px;
 }
 
-.footer input[type=submit]
+.footer input[type=button]
 {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -237,12 +237,7 @@
         padding-top: 20px;
         padding-bottom: 20px;
     }
-
-    .nav-logo
-    {
-        text-align: right;
-    }
-
+    
     .nav-bar ul
     {
         margin-left: -15px;
